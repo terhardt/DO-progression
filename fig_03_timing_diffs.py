@@ -149,4 +149,4 @@ for l, ax in zip(('a', 'b', 'c', 'd'), axes):
     ax.text(0.01, 0.95, l, ha='left', va='top', transform=ax.transAxes,
             weight='bold', fontsize=8)
 
-fig.savefig('figures/fig_02_timing_diffs.pdf')
+fig.savefig('figures/fig_03_timing_diffs.pdf')

@@ -63,4 +63,4 @@ for yt, tr in zip(amp_traces, time_traces):
     tmed, terr = calc_med_iqr(tr)
     ymed, yerr = calc_med_iqr(yt)
 
-fig.savefig('figures/fig_04_example_fit.pdf')
+fig.savefig('figures/fig_02_example_fit.pdf')

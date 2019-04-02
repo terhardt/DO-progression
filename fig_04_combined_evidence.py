@@ -100,4 +100,4 @@ axes[0].set_ylabel('Probability density (yr$^{-1}$)')
 axes[0].spines['left'].set_visible(True)
 axes[0].yaxis.set_ticks_position('left')
 
-fig.savefig('figures/fig_03_combined_evidence.pdf')
+fig.savefig('figures/fig_04_combined_evidence.pdf')
