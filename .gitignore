@@ -1,0 +1,13 @@
+# Output directories
+data/unpublished/
+ramp_fits/sampler/*.gz
+ramp_fits/traces/*.gz
+results/*.csv
+figures/*.pdf
+figures/archive/
+archive
+# Other stuff
+.cache/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
