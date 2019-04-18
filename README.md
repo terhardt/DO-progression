@@ -2,7 +2,7 @@
 
 This repository contains all the data/code to reproduce the results for
 
-_{insert citation here}_
+*Erhardt, T., Capron, E., Rasmussen, S. O., Schüpbach, S., Bigler, M., Adolphi, F., and Fischer, H.: Decadal-scale progression of the onset of Dansgaard-Oeschger warming events, Clim. Past, 2019*
 
 The easiest way to install all the requirements, is using `conda` and the provided `environment.yml` file that specifies the dependencies of the code.
 To create a conda environment with the necessary packages run
@@ -31,9 +31,7 @@ All sub directories contain their own respective `README.md` files:
 
 ## Attribution
 This code is associated and written for above mentioned paper.
-If you make use of it, please cite
-    
-    @article{}
+If you make use of it, please cite the accompanying paper.
 
 ## License
 
