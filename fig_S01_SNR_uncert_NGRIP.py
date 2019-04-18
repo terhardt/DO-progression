@@ -21,7 +21,7 @@ for param in snr.coords['param'].values:
     x_plt = np.sort(x[np.isfinite(x)])
     ax.plot(x_plt, np.polyval(fit, x_plt), color=l.get_color(), ls='dashed')
 ax.set_xlabel(r'SNR $\left(\mid\Delta y / \sigma\mid\right)$')
-ax.set_ylabel('Marg. post. std. of $t_0$ (yr)')
+ax.set_ylabel('Marg. post. SD of $t_0$ (yr)')
 ax.legend()
 
 fig.savefig('figures/fig_S01_SNR_uncert_NGRIP.pdf')

@@ -126,7 +126,7 @@ axes[1].set_ylabel('Onset lag (yr)')
 axes[2].set_ylabel('Midpoint lag (yr)')
 axes[3].set_ylabel('Endpoint lag (yr)')
 
-axes[0].set_xlabel('GICC05 Age (ka BP)')
+axes[0].set_xlabel('GICC05 Age (kyr before 1950)')
 axes[0].xaxis.set_major_locator(plt.MultipleLocator(10))
 axes[0].xaxis.set_minor_locator(plt.MultipleLocator(2))
 
@@ -146,7 +146,7 @@ legend_ax.legend(loc='lower right', fontsize=5, ncol=4,
                  columnspacing=0.2, borderpad=0.2)
 
 for l, ax in zip(('a', 'b', 'c', 'd'), axes):
-    ax.text(0.01, 0.95, l, ha='left', va='top', transform=ax.transAxes,
-            weight='bold', fontsize=8)
+    ax.text(0.01, 0.95, '(%s)'% l, ha='left', va='top', transform=ax.transAxes,
+            weight='bold', fontsize=7)
 
 fig.savefig('figures/fig_03_timing_diffs.pdf')

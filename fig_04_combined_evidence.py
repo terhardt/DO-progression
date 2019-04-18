@@ -74,8 +74,8 @@ for ls, CORE in zip(['solid', 'dashed'], cores):
                     ls=ls, lw=1.0)
 
 for l, ax in zip(['a', 'b', 'c'], axes):
-    ax.text(0.05, 0.95, l, ha='left', va='top',
-            transform=ax.transAxes, weight='bold', size=10)
+    ax.text(0.05, 0.95, '(%s)' % l, ha='left', va='top',
+            transform=ax.transAxes, weight='bold', size=7)
 
 for point, ax in zip(('onset', 'midpoint', 'endpoint'), axes):
     ax.set_xlabel('Lag to %s$^{+}$ at %s (yr)' % (ref_par, point))

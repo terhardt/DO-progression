@@ -89,7 +89,7 @@ move_axes(axes[5], dy=0.10)
 
 
 
-axes[-1].set_xlabel('GICC05 Age (ka before 1950)')
+axes[-1].set_xlabel('GICC05 Age (kyr before 1950)')
 axes[-1].xaxis.set_major_locator(plt.MultipleLocator(5))
 axes[-1].xaxis.set_minor_locator(plt.MultipleLocator(1))
 
@@ -99,8 +99,8 @@ for ax in axes:
         ax.axvline(a / 1000, lw=0.5, zorder=-100, ls='solid')
     ax.set_xlim(8.000, 62.000)
 
-for l, x, ax in zip(('a', 'b', 'c', 'd', 'e', 'f'), (0.01, 0.98, 0.01, 0.98, 0.01, 0.98), axes):
-    ax.text(x, 0.95, l, ha='left', va='top', transform=ax.transAxes,
-            weight='bold', fontsize=8)
+for l, x, ax in zip(('a', 'b', 'c', 'd', 'e', 'f'), (0.01, 0.97, 0.01, 0.97, 0.01, 0.97), axes):
+    ax.text(x, 0.95, '(%s)' % l, ha='left', va='top', transform=ax.transAxes,
+            weight='bold', fontsize=7)
 
 fig.savefig('figures/fig_01_overview.pdf')

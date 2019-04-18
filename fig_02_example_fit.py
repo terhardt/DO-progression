@@ -63,4 +63,8 @@ for yt, tr in zip(amp_traces, time_traces):
     tmed, terr = calc_med_iqr(tr)
     ymed, yerr = calc_med_iqr(yt)
 
+for l, ax in zip(('a', 'b'),  axes):
+    ax.text(0.01, 0.95, '(%s)' % l, ha='left', va='top', transform=ax.transAxes,
+            weight='bold', fontsize=7)
+
 fig.savefig('figures/fig_02_example_fit.pdf')
